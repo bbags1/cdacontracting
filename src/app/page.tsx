@@ -32,16 +32,16 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Kitchen Remodeling</h3>
+              <h3 className="text-xl font-semibold mb-4">Kitchen Remodels</h3>
               <p className="text-gray-600">Custom kitchen designs that combine functionality with stunning aesthetics.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Bathroom Renovation</h3>
+              <h3 className="text-xl font-semibold mb-4">Bathroom Renovations</h3>
               <p className="text-gray-600">Transform your bathroom into a luxurious and relaxing space.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Custom Trim Work</h3>
-              <p className="text-gray-600">Expert craftsmanship in crown molding, baseboards, and custom trim.</p>
+              <h3 className="text-xl font-semibold mb-4">Carpentry</h3>
+              <p className="text-gray-600">Expert craftsmanship in sauna construction, trim work, and custom carpentry.</p>
             </div>
           </div>
         </div>
@@ -52,28 +52,31 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="relative h-64">
+            <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/photos/bathrooms13.jpg"
                 alt="Luxury bathroom remodel"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="relative h-64">
+            <div className="relative aspect-[4/3] w-full">
               <Image
-                src="/photos/trim.jpg"
-                alt="Custom trim work"
+                src="/photos/IMG_6824.JPG"
+                alt="Custom interior design"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="relative h-64">
+            <div className="relative aspect-[4/3] w-full">
               <Image
-                src="/photos/flooring.jpg"
-                alt="Hardwood flooring installation"
+                src="/photos/IMG_8791.jpg"
+                alt="Modern home renovation"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>

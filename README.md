@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CDA Contracting Website
+
+A modern, SEO-optimized website for a contracting business in Coeur d'Alene, Idaho. Built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Responsive design that works on all devices
+- Image gallery with project photos
+- Contact form for customer inquiries
+- SEO optimized for local search
+- Fast loading and performance optimized
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+### Development
+
+To run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Starting Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run start
+# or
+yarn start
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This website is configured for deployment on Cloudflare Pages. To deploy:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to a GitHub repository
+2. Connect your repository to Cloudflare Pages
+3. Configure the build settings:
+   - Build command: `npm run build`
+   - Build output directory: `out`
+   - Environment variables: None required
+
+## Project Structure
+
+```
+├── public/
+│   └── photos/      # Project photos (automatically copied from parent directory)
+├── src/
+│   ├── app/         # Next.js app directory
+│   │   ├── page.tsx # Homepage
+│   │   ├── gallery/ # Gallery page
+│   │   └── contact/ # Contact page
+│   └── components/  # React components
+├── copy-photos.js   # Script to copy photos to public directory
+└── next.config.mjs  # Next.js configuration
+```
+
+## Customization
+
+- Update contact information in `src/app/contact/page.tsx`
+- Modify the photo gallery in `src/app/gallery/page.tsx`
+- Adjust styles in the Tailwind classes or modify `tailwind.config.js`
+- Update SEO metadata in each page's metadata export
+
+## License
+
+This project is private and confidential. All rights reserved.
