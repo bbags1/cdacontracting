@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Custom Saunas & Bathroom Remodeling | CDA Contracting | Coeur d\'Alene',
+  description: 'Expert bathroom remodeling, custom Finnish sauna construction, and professional tile installation in Coeur d\'Alene, ID. Specializing in luxury renovations with over 10 years of experience.',
+  keywords: 'custom saunas Coeur d\'Alene, bathroom remodeling Idaho, Finnish sauna builder, tile installation, luxury bathroom renovation, home improvement contractor, tile work Coeur d\'Alene, remodeling services Idaho',
+  alternates: {
+    canonical: 'https://cdacontracting.com'
+  }
+};
+
 export default function Home() {
   return (
     <div>

@@ -5,9 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Premier Contracting Services | Coeur d'Alene, ID",
-  description: "Expert home renovation and remodeling services in Coeur d'Alene, Idaho. Specializing in kitchens, bathrooms, flooring, and trim work. Quality craftsmanship and professional service.",
-  keywords: "contractor, home renovation, remodeling, Coeur d'Alene, Idaho, kitchen remodel, bathroom remodel, flooring, trim work",
+  title: "Premier Bathroom Remodeling & Custom Saunas | Coeur d'Alene, ID",
+  description: "Expert bathroom remodeling, custom sauna construction, and professional tile work in Coeur d'Alene. Specializing in luxury bathroom renovations, Finnish saunas, and high-end tile installation.",
+  keywords: "bathroom remodeling Coeur d'Alene, custom saunas Idaho, tile installation, bathroom renovation, Finnish sauna builder, luxury bathroom remodel, tile contractor Coeur d'Alene, home renovation Idaho",
+  openGraph: {
+    title: "Premier Bathroom Remodeling & Custom Saunas | Coeur d'Alene, ID",
+    description: "Expert bathroom remodeling, custom sauna construction, and professional tile work in Coeur d'Alene.",
+    images: ['/photos/bathrooms13.jpg'],
+  },
 };
 
 export default function RootLayout({
