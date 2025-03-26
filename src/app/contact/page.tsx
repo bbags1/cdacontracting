@@ -22,16 +22,13 @@ export default function Contact() {
                 <p className="text-gray-600 text-xl">
                   Brody: <a href="tel:3609773487" className="hover:text-gray-900 transition">(360) 977-3487</a>
                 </p>
-                <p className="text-gray-600 text-xl">
-                  Kira: <a href="tel:7759807160" className="hover:text-gray-900 transition">(775) 980-7160</a>
-                </p>
               </div>
             </div>
             <div>
               <h3 className="font-medium text-gray-900">Email</h3>
               <p className="text-gray-600 text-lg">
-                <a href="mailto:vancouvertileandbath@gmail.com" className="hover:text-gray-900 transition">
-                  vancouvertileandbath@gmail.com
+                <a href="mailto:cdatileandbath@gmail.com" className="hover:text-gray-900 transition">
+                  cdatileandbath@gmail.com
                 </a>
               </p>
             </div>
